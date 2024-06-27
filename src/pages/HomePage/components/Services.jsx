@@ -25,6 +25,7 @@ function Services() {
         <Swiper
           slidesPerView={4}
           spaceBetween={30}
+          loop={true}
           centeredSlides={true}
           pagination={{
             clickable: true,
