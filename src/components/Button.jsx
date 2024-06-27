@@ -23,26 +23,24 @@ function ButtonForm({
 
   function sendMessage(e) {
     e.preventDefault();
-    if (numberValue === "") {
-    } else {
-      fetch(
-        `https://api.telegram.org/bot${bot.TOKEN}/sendMessage?chat_id=${bot.chatID}&text=${bot.message} `,
-        {
-          method: "GET",
-        }
-      ).then(
-        (success) => {
-          if (success.status === 200) {
-            handleClear();
-            onClose();
-          }
-          // window.location.reload();
-          toast.success("Sizning xabaringiz muvaffaqiyatli yuborildi!");
+
+    fetch(
+      `https://api.telegram.org/bot${bot.TOKEN}/sendMessage?chat_id=${bot.chatID}&text=${bot.message} `,
+      {
+        method: "GET",
+      }
+    ).then(
+      (success) => {
+        if (success.status === 200) {
+          handleClear();
           onClose();
-        },
-        () => {}
-      );
-    }
+        }
+        // window.location.reload();
+        toast.success("Sizning xabaringiz muvaffaqiyatli yuborildi!");
+        onClose();
+      },
+      () => {}
+    );
   }
   return (
     <Button type="submit" width={width} onClick={sendMessage} {...css.button}>

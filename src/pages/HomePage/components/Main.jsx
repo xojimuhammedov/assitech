@@ -8,7 +8,8 @@ function Main() {
       <Box className="container">
         <Flex>
           <Text {...css.title}>
-            Поставляем медицинское оборудование напрямую от производителя
+            <b style={{ color: "#C3242A" }}>Поставляем</b> медицинское
+            оборудование напрямую от производителя
           </Text>
           <Box>
             <Image {...css.left} src={AparatOne} />
@@ -20,8 +21,8 @@ function Main() {
           </Box>
           <Flex width={"100%"} justifyContent={"flex-end"}>
             <Text {...css.titles}>
-              Решаем задачи комплексного медицинского оснащения и сервисного
-              обслуживания
+              <b style={{ color: "#C3242A" }}>Решаем</b> задачи комплексного
+              медицинского оснащения и сервисного обслуживания
             </Text>
           </Flex>
         </Flex>
@@ -36,7 +37,7 @@ const css = {
   main: {
     background: "#F7F7F7",
     padding: "50px 0",
-    marginTop: "50px",
+    marginTop: "120px",
     position: "relative",
   },
   title: {
@@ -45,6 +46,7 @@ const css = {
     width: "900px",
     fontWeight: "500",
     letterSpacing: "-1.5px",
+    color: "#110D60",
   },
   left: {
     position: "absolute",
@@ -60,6 +62,8 @@ const css = {
     fontSize: "63px",
     lineHeight: "58px",
     fontWeight: "500",
+    letterSpacing: "-1.5px",
     width: "900px",
+    color: "#110D60",
   },
 };

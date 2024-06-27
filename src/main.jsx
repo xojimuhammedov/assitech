@@ -5,7 +5,7 @@ import { ChakraProvider } from "@chakra-ui/react";
 import { BrowserRouter } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-// import "./i18n.jsx";
+import "./i18n.jsx";
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(

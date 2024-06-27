@@ -43,3 +43,19 @@
   align-items: center;
   justify-content: center;
 }
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  padding: 25px 0 !important;
+}
+
+.footer-location {
+  height: 100vh;
+  position: relative;
+  z-index: 999;
+}
+
+.swiper-wrapper {
+  margin-left: -150px !important;
+}
