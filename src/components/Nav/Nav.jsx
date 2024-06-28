@@ -15,29 +15,23 @@ function Nav() {
             <LinkChakra
               {...css.social}
               target="_blank"
-              href="https://www.instagram.com/alstar.uz">
+              href="https://www.instagram.com/assitechbio">
               <Instagram height={16} width={16} />
             </LinkChakra>
             <LinkChakra
               target="_blank"
               {...css.social}
-              href="https://t.me/AlstarDibond">
+              href="https://t.me/UZD_sistemi">
               <Telegram height={16} width={16} />
             </LinkChakra>
             <LinkChakra
               target="_blank"
               {...css.social}
-              href="https://www.facebook.com/profile.php?id=61553429155300">
+              href="https://www.facebook.com/rahmat.kham8?mibextid=ZbWKwL">
               <Facebook height={16} width={16} />
             </LinkChakra>
-            <LinkChakra
-              {...css.social}
-              target="_blank"
-              href="https://www.youtube.com/@uzbekistanalstar4978">
-              <YouTube height={18} width={20} />
-            </LinkChakra>
-            <a className="nav-link nav-links" href="tel:+998946690006">
-              +998 94 669 00 06
+            <a className="nav-link nav-links" href="tel:+998998159885">
+              +998 99 815 98 85
             </a>
             <TimeOut />
           </Flex>

@@ -1,3 +1,5 @@
+import Contact from "../../components/Contact/Contact";
+import AboutUs from "./components/AboutUs";
 import Header from "./components/Header";
 import Main from "./components/Main";
 import Products from "./components/Products";
@@ -8,10 +10,12 @@ function HomePage() {
   return (
     <>
       <Header />
+      <AboutUs />
       <Main />
       <Products />
       <Statistic />
       <Services />
+      <Contact />
     </>
   );
 }

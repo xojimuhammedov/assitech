@@ -25,20 +25,18 @@ function Navbar() {
               {/* <NavModal /> */}
             </Box>
             <Link {...css.link} href="#">
-              {t("hello1")}
+              {t("About Us")}
             </Link>
             <Link {...css.link} href="#about">
-              {t("hello2")}
+              {t("Projects")}
             </Link>
             <Link {...css.link} href="#product">
-              {t("hello3")}
+              {t("News")}
             </Link>
-            <Link onClick={() => navigate("/news")} {...css.link} to="/news">
-              {t("hello4")}
-            </Link>
-            <Link {...css.link} href="#contact">
+            <Link {...css.link}>{t("Contact")}</Link>
+            {/* <Link {...css.link} href="#contact">
               {t("hello6")}
-            </Link>
+            </Link> */}
           </Flex>
         </Flex>
       </Box>

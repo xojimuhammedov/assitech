@@ -6,10 +6,7 @@ import { Autoplay, EffectFade } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
-
-import SliderOne from "../../../assets/header1.png";
-import SliderTwo from "../../../assets/header2.png";
-import SliderThree from "../../../assets/header3.png";
+import SliderFour from "../../../assets/header4.jpg";
 
 function Header() {
   return (
@@ -24,15 +21,9 @@ function Header() {
           }}
           keyboard={true}
           modules={[Autoplay, EffectFade]}
-          className="mySwiper">
+          className="mySwiper header-swiper">
           <SwiperSlide>
-            <Image {...css.image} src={SliderOne} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Image {...css.image} src={SliderTwo} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Image {...css.image} src={SliderThree} />
+            <Image {...css.image} src={SliderFour} />
           </SwiperSlide>
         </Swiper>
       </Box>
@@ -44,16 +35,11 @@ export default Header;
 
 const css = {
   image: {
-    height: {
-      base: "330px",
-      md: "600px",
-    },
     width: "100%",
     maxWidth: "100%",
     minWidth: "100%",
-    objectFit: {
-      base: "cover",
-      md: "contain",
-    },
+    objectFit: "cover",
+    height: "550px",
+    borderRadius: "20px",
   },
 };

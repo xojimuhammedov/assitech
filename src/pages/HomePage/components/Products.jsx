@@ -14,97 +14,96 @@ import ProductOne from "../../../assets/product1.jpg";
 
 function Products() {
   return (
-    <Box mt={"220px"}>
+    <Box className="product" mt={"220px"}>
       <Box className="container">
         <Flex mb={"30px"} gap={"25px"} align={"center"}>
           <Heading {...css.title}>Новинки</Heading>
           <Heading {...css.title}>Акции</Heading>
           <Heading {...css.title}>События</Heading>
         </Flex>
-
-        <Swiper
-          slidesPerView={4}
-          spaceBetween={30}
-          centeredSlides={true}
-          pagination={{
-            clickable: true,
-          }}
-          modules={[Pagination]}
-          className="mySwiper">
-          <SwiperSlide>
-            <Box {...css.item}>
-              <Text {...css.name}>
-                Низкотемпературный плазменный стерилизатор RENO – S130
-              </Text>
-              <Image {...css.image} src={ProductOne} />
-              <Flex justifyContent={"space-between"} align={"center"}>
-                <Text {...css.name}>Renosem</Text>
-                <Text {...css.price}>от 55 000 ye</Text>
-              </Flex>
-            </Box>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Box {...css.item}>
-              <Text {...css.name}>
-                Низкотемпературный плазменный стерилизатор RENO – S130
-              </Text>
-              <Image {...css.image} src={ProductOne} />
-              <Flex justifyContent={"space-between"} align={"center"}>
-                <Text {...css.name}>Renosem</Text>
-                <Text {...css.price}>от 55 000 ye</Text>
-              </Flex>
-            </Box>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Box {...css.item}>
-              <Text {...css.name}>
-                Низкотемпературный плазменный стерилизатор RENO – S130
-              </Text>
-              <Image {...css.image} src={ProductOne} />
-              <Flex justifyContent={"space-between"} align={"center"}>
-                <Text {...css.name}>Renosem</Text>
-                <Text {...css.price}>от 55 000 ye</Text>
-              </Flex>
-            </Box>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Box {...css.item}>
-              <Text {...css.name}>
-                Низкотемпературный плазменный стерилизатор RENO – S130
-              </Text>
-              <Image {...css.image} src={ProductOne} />
-              <Flex justifyContent={"space-between"} align={"center"}>
-                <Text {...css.name}>Renosem</Text>
-                <Text {...css.price}>от 55 000 ye</Text>
-              </Flex>
-            </Box>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Box {...css.item}>
-              <Text {...css.name}>
-                Низкотемпературный плазменный стерилизатор RENO – S130
-              </Text>
-              <Image {...css.image} src={ProductOne} />
-              <Flex justifyContent={"space-between"} align={"center"}>
-                <Text {...css.name}>Renosem</Text>
-                <Text {...css.price}>от 55 000 ye</Text>
-              </Flex>
-            </Box>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Box {...css.item}>
-              <Text {...css.name}>
-                Низкотемпературный плазменный стерилизатор RENO – S130
-              </Text>
-              <Image {...css.image} src={ProductOne} />
-              <Flex justifyContent={"space-between"} align={"center"}>
-                <Text {...css.name}>Renosem</Text>
-                <Text {...css.price}>от 55 000 ye</Text>
-              </Flex>
-            </Box>
-          </SwiperSlide>
-        </Swiper>
       </Box>
+      <Swiper
+        slidesPerView={4}
+        spaceBetween={30}
+        centeredSlides={true}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Pagination]}
+        className="mySwiper product-swiper">
+        <SwiperSlide>
+          <Box {...css.item}>
+            <Text {...css.name}>
+              Низкотемпературный плазменный стерилизатор RENO – S130
+            </Text>
+            <Image {...css.image} src={ProductOne} />
+            <Flex justifyContent={"space-between"} align={"center"}>
+              <Text {...css.name}>Renosem</Text>
+              <Text {...css.price}>от 55 000 ye</Text>
+            </Flex>
+          </Box>
+        </SwiperSlide>
+        <SwiperSlide>
+          <Box {...css.item}>
+            <Text {...css.name}>
+              Низкотемпературный плазменный стерилизатор RENO – S130
+            </Text>
+            <Image {...css.image} src={ProductOne} />
+            <Flex justifyContent={"space-between"} align={"center"}>
+              <Text {...css.name}>Renosem</Text>
+              <Text {...css.price}>от 55 000 ye</Text>
+            </Flex>
+          </Box>
+        </SwiperSlide>
+        <SwiperSlide>
+          <Box {...css.item}>
+            <Text {...css.name}>
+              Низкотемпературный плазменный стерилизатор RENO – S130
+            </Text>
+            <Image {...css.image} src={ProductOne} />
+            <Flex justifyContent={"space-between"} align={"center"}>
+              <Text {...css.name}>Renosem</Text>
+              <Text {...css.price}>от 55 000 ye</Text>
+            </Flex>
+          </Box>
+        </SwiperSlide>
+        <SwiperSlide>
+          <Box {...css.item}>
+            <Text {...css.name}>
+              Низкотемпературный плазменный стерилизатор RENO – S130
+            </Text>
+            <Image {...css.image} src={ProductOne} />
+            <Flex justifyContent={"space-between"} align={"center"}>
+              <Text {...css.name}>Renosem</Text>
+              <Text {...css.price}>от 55 000 ye</Text>
+            </Flex>
+          </Box>
+        </SwiperSlide>
+        <SwiperSlide>
+          <Box {...css.item}>
+            <Text {...css.name}>
+              Низкотемпературный плазменный стерилизатор RENO – S130
+            </Text>
+            <Image {...css.image} src={ProductOne} />
+            <Flex justifyContent={"space-between"} align={"center"}>
+              <Text {...css.name}>Renosem</Text>
+              <Text {...css.price}>от 55 000 ye</Text>
+            </Flex>
+          </Box>
+        </SwiperSlide>
+        <SwiperSlide>
+          <Box {...css.item}>
+            <Text {...css.name}>
+              Низкотемпературный плазменный стерилизатор RENO – S130
+            </Text>
+            <Image {...css.image} src={ProductOne} />
+            <Flex justifyContent={"space-between"} align={"center"}>
+              <Text {...css.name}>Renosem</Text>
+              <Text {...css.price}>от 55 000 ye</Text>
+            </Flex>
+          </Box>
+        </SwiperSlide>
+      </Swiper>
     </Box>
   );
 }
