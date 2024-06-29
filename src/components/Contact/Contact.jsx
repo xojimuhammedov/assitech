@@ -126,7 +126,7 @@ function Contact() {
           <Fade bottom>
             <Image
               {...css.image}
-              src="http://alstar.uz/assets/contact-527c043b.png"
+              src="https://alstar.uz/assets/contact-527c043b.png"
             />
           </Fade>
         </Flex>
