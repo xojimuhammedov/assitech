@@ -11,10 +11,10 @@ function HomePage() {
     <>
       <Header />
       <AboutUs />
+      <Services />
       <Main />
       <Products />
       <Statistic />
-      <Services />
       <Contact />
     </>
   );

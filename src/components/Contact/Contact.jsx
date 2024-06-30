@@ -1,8 +1,25 @@
-import { Box, Button, Flex, Heading, Image } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Flex,
+  FormControl,
+  FormLabel,
+  Heading,
+  Image,
+  Input,
+  InputLeftElement,
+  Textarea,
+  InputGroup,
+  Text,
+} from "@chakra-ui/react";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Fade } from "react-reveal";
-import ContactImage from "../../assets/contact.png";
+import { PhoneIcon } from "@chakra-ui/icons";
+
+import Adress from "../../assets/adres.jpg";
+import Phone from "../../assets/phone.jpg";
+import Pochta from "../../assets/pochta.jpg";
+import Hour from "../../assets/hour.jpg";
 
 function Contact() {
   const [nameValue, setNameValue] = useState("");
@@ -59,74 +76,100 @@ function Contact() {
 
   const { t } = useTranslation();
   return (
-    <Box id="contact" p={"35px 0"}>
+    <Box id="contact" p={"35px 150px"}>
       <Box className="container">
         <Flex
-          flexDirection={{ base: "column-reverse", md: "row" }}
-          justifyContent={"space-evenly"}>
-          <Fade bottom>
-            <Box>
-              <Heading {...css.title}>
-                {t("Bizga qanday savolingiz bor?")}
-              </Heading>
-              <form className="form" action="">
-                <label htmlFor="username">
-                  {t("Ism")}
-                  <input
-                    type="text"
-                    name="username"
+          flexDirection={{
+            xl: "row",
+            lg: "row",
+            md: "column-reverse",
+            sm: "column-reverse",
+            base: "column-reverse",
+          }}
+          {...css.list}>
+          <Box {...css.left}>
+            <Heading {...css.title}>{t("Контактная информация")}</Heading>
+            <Text {...css.text}>
+              {t(
+                "Вы можете получить больше информации с помощью этих контактных данных"
+              )}
+            </Text>
+            <Flex m={"10px 0"} gap={"20px"} align={"center"}>
+              <Image src={Adress} />
+              <Text {...css.link}>
+                86 Tursunzoda street, Yangihayot region, Tashkent, Uzbekistan
+              </Text>
+            </Flex>
+            <Flex m={"10px 0"} gap={"20px"} align={"center"}>
+              <Image src={Pochta} />
+              <Text {...css.link}>centurysilkroad_uz@mail.ru</Text>
+            </Flex>
+            <Flex m={"10px 0"} gap={"20px"} align={"center"}>
+              <Image src={Phone} />
+              <Text {...css.link}>+998 97 747 28 06</Text>
+            </Flex>
+            <Flex m={"10px 0"} gap={"20px"} align={"center"}>
+              <Image src={Hour} />
+              <Text {...css.link}>Пн-Пт с 09:00 до 18:00 Ташкент</Text>
+            </Flex>
+          </Box>
+          <Box
+            {...css.right}
+            width={{ xl: "50%", md: "80%", sm: "90%", base: "100%" }}>
+            <Heading {...css.title}>{t("Bizga qanday savolingiz bor?")}</Heading>
+            <form action="">
+              <Box m="25px 0">
+                <FormControl isRequired>
+                  <FormLabel {...css.label}>
+                    {" "}
+                    {t("Ismingizni kiriting")}
+                  </FormLabel>
+                  <Input
                     value={nameValue}
                     onChange={(e) => changeName(e.target.value)}
-                    id="username"
-                    className="contact-input"
+                    {...css.input}
                     placeholder={t("Ismingizni kiriting")}
                   />
-                </label>
-                <label htmlFor="email">
-                  {t("Elektron pochta yoki Telegram")}
-                  <input
-                    type="text"
-                    name="email"
-                    value={nameValue}
-                    onChange={(e) => changeName(e.target.value)}
-                    id="email"
-                    className="contact-input"
-                    placeholder={t("Elektron pochta yoki Telegram")}
-                  />
-                </label>
-                <label htmlFor="phone">
-                  {t("Telefon raqami")}
-                  <input
-                    type="number"
-                    name="phone"
-                    value={numberValue}
-                    onChange={(e) => changeNumber(e.target.value)}
-                    id="phone"
-                    className="contact-input"
-                    placeholder="+998"
-                  />
-                </label>
-                <label htmlFor="text">
-                  {t("Sizning xabaringiz")}
-                  <textarea
-                    name="text"
-                    className="contact-input"
+                </FormControl>
+              </Box>
+              <Box m="25px 0">
+                <FormControl isRequired>
+                  <FormLabel {...css.label}> {t("Telefon raqami")}</FormLabel>
+                  <InputGroup>
+                    <InputLeftElement pointerEvents="none">
+                      <PhoneIcon color="gray.300" />
+                    </InputLeftElement>
+                    <Input
+                      {...css.input}
+                      value={numberValue}
+                      onChange={(e) => changeNumber(e.target.value)}
+                      size="md"
+                      type="tel"
+                      placeholder={t("Telefon raqami")}
+                    />
+                  </InputGroup>
+                </FormControl>
+              </Box>
+              <Box m="25px 0">
+                <FormControl isRequired>
+                  <FormLabel {...css.label}>
+                    {" "}
+                    {t("Sizning xabaringiz")}
+                  </FormLabel>
+                  <Textarea
                     placeholder={t("Sizning xabaringiz")}
-                    rows="5"
+                    size="md"
+                    {...css.textarea}
                     value={textValue}
                     onChange={(e) => changeText(e.target.value)}
-                    cols="50"
-                    id="text"></textarea>
-                </label>
-                <Button onClick={sendMessage} {...css.button} type="submit">
-                  {t("Yuborish")}
-                </Button>
-              </form>
-            </Box>
-          </Fade>
-          <Fade bottom>
-            <Image {...css.image} src={ContactImage} />
-          </Fade>
+                  />
+                </FormControl>
+              </Box>
+              <Button type="submit" onClick={sendMessage} {...css.button}>
+                {t("hello21")}
+              </Button>
+            </form>
+          </Box>
         </Flex>
       </Box>
     </Box>
@@ -140,37 +183,79 @@ const css = {
     width: "600px",
   },
   title: {
-    fontSize: {
-      base: "23px",
-      md: "35px",
+    fontSize: "30px",
+    lineHeight: "35px",
+    fontWeight: 600,
+    color: "#fff",
+    textAlign: "center",
+  },
+  label: {
+    fontSize: "16px",
+    fontWeight: 300,
+    lineHeight: "22px",
+    color: "white",
+  },
+  input: {
+    width: { xl: "100%", lg: "100%", md: "100%", sm: "100%", base: "100%" },
+    border: "1px solid white",
+    height: "48px !important",
+
+    _placeholder: {
+      color: "white",
     },
-    lineHeight: {
-      base: "30px",
-      md: "55px",
+  },
+  textarea: {
+    border: "1px solid white",
+    height: "120px",
+    _placeholder: {
+      color: "white",
     },
-    letterSpacing: "1px",
-    color: "#110D60",
   },
   button: {
-    backgroundColor: "#EDCB3F",
-    border: "2px solid #EDCB3F",
-    color: "#fff",
+    background: "#fff !important",
+    color: "#8a2be2",
+    fontWeight: "600 !important",
+    height: "45px",
+    transition: "0.3s all ease",
     fontSize: "18px",
-    lineHeight: "25px",
-    letterSpacing: "1px",
-    fontWeight: 600,
-    borderRadius: "12px",
-    transition: "0.3s ease",
-    height: "50px",
+    lineHeight: "24px",
+    borderRadius: "20px",
+    cursor: "pointer",
+    border: "1px solid #8a2be2",
     width: "100%",
-
-    _hover: {
-      backgroundColor: "#fff",
-      color: "#110D60",
-      cursor: "pointer",
-      boxShadow: "0 9px 18px 0 rgba(144,173,248,0.25)",
-      transform: "scale(1.02)",
-      transition: "0.3s ease",
+  },
+  left: {
+    backgroundColor: "#1E2E3E",
+    padding: {
+      base: "20px 10px",
+      md: "20px 70px",
+    },
+  },
+  right: {
+    backgroundColor: "#8A2BE2",
+    padding: {
+      base: "20px 10px",
+      md: "23px 70px",
+    },
+  },
+  link: {
+    color: "white",
+    fontSize: "16px",
+    lineHeight: "24px",
+    width: {
+      base: "100%",
+      md: "60%",
+    },
+  },
+  text: {
+    color: "white",
+    textAlign: "center",
+    width: "100%",
+    margin: "20px 0",
+    lineHeight: "25px",
+    fontSize: {
+      base: "16px",
+      md: "18px",
     },
   },
 };

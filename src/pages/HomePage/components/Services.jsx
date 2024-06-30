@@ -8,9 +8,15 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 // import required modules
-import { Pagination } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 
 import ProductOne from "../../../assets/services.jpg";
+import ProductTwo from "../../../assets/services2.jpg";
+import ProductThree from "../../../assets/services3.jpg";
+import ProductFour from "../../../assets/services4.jpg";
+import ProductFive from "../../../assets/services5.jpg";
+import ProductSix from "../../../assets/servies6.jpg";
+import ProductSeven from "../../../assets/services7.jpg";
 
 function Services() {
   return (
@@ -21,66 +27,62 @@ function Services() {
           <b style={{ color: "#C3242A" }}>Сопровождаем</b> клиента на всех
           этапах
         </Heading>
+        <Swiper
+          slidesPerView={4}
+          spaceBetween={30}
+          pagination={{
+            clickable: true,
+          }}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
+          }}
+          modules={[Pagination, Autoplay]}
+          className="mySwiper">
+          <SwiperSlide>
+            <Box {...css.item}>
+              <Text {...css.name}>Сервис</Text>
+              <Image {...css.image} src={ProductOne} />
+            </Box>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Box {...css.item}>
+              <Text {...css.name}>Производство</Text>
+              <Image {...css.image} src={ProductTwo} />
+            </Box>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Box {...css.item}>
+              <Text {...css.name}>Комплексное оснащение</Text>
+              <Image {...css.image} src={ProductThree} />
+            </Box>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Box {...css.item}>
+              <Text {...css.name}>Лизинг</Text>
+              <Image {...css.image} src={ProductFour} />
+            </Box>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Box {...css.item}>
+              <Text {...css.name}>Trade-in</Text>
+              <Image {...css.image} src={ProductFive} />
+            </Box>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Box {...css.item}>
+              <Text {...css.name}>Обучение</Text>
+              <Image {...css.image} src={ProductSix} />
+            </Box>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Box {...css.item}>
+              <Text {...css.name}>ProVisio</Text>
+              <Image {...css.image} src={ProductSeven} />
+            </Box>
+          </SwiperSlide>
+        </Swiper>
       </Box>
-      <Swiper
-        slidesPerView={4}
-        spaceBetween={30}
-        // loop={true}
-        centeredSlides={true}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Pagination]}
-        className="mySwiper product-swiper">
-        <SwiperSlide>
-          <Box {...css.item}>
-            <Text {...css.name}>
-              Низкотемпературный плазменный стерилизатор RENO – S130
-            </Text>
-            <Image {...css.image} src={ProductOne} />
-          </Box>
-        </SwiperSlide>
-        <SwiperSlide>
-          <Box {...css.item}>
-            <Text {...css.name}>
-              Низкотемпературный плазменный стерилизатор RENO – S130
-            </Text>
-            <Image {...css.image} src={ProductOne} />
-          </Box>
-        </SwiperSlide>
-        <SwiperSlide>
-          <Box {...css.item}>
-            <Text {...css.name}>
-              Низкотемпературный плазменный стерилизатор RENO – S130
-            </Text>
-            <Image {...css.image} src={ProductOne} />
-          </Box>
-        </SwiperSlide>
-        <SwiperSlide>
-          <Box {...css.item}>
-            <Text {...css.name}>
-              Низкотемпературный плазменный стерилизатор RENO – S130
-            </Text>
-            <Image {...css.image} src={ProductOne} />
-          </Box>
-        </SwiperSlide>
-        <SwiperSlide>
-          <Box {...css.item}>
-            <Text {...css.name}>
-              Низкотемпературный плазменный стерилизатор RENO – S130
-            </Text>
-            <Image {...css.image} src={ProductOne} />
-          </Box>
-        </SwiperSlide>
-        <SwiperSlide>
-          <Box {...css.item}>
-            <Text {...css.name}>
-              Низкотемпературный плазменный стерилизатор RENO – S130
-            </Text>
-            <Image {...css.image} src={ProductOne} />
-          </Box>
-        </SwiperSlide>
-      </Swiper>
     </Box>
   );
 }

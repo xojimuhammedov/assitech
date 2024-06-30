@@ -16,7 +16,7 @@ function Header() {
           loop={true}
           effect="fade"
           autoplay={{
-            delay: 5500,
+            delay: 3500,
             disableOnInteraction: false,
           }}
           keyboard={true}
