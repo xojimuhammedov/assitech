@@ -13,7 +13,7 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import { PhoneIcon } from "@chakra-ui/icons";
-import React, { useState } from "react";
+import { useState } from "react";
 import ButtonForm from "./Button";
 import { useTranslation } from "react-i18next";
 
@@ -44,7 +44,7 @@ function TimeOut() {
   return (
     <>
       <button className="timeout-modal" onClick={onOpen}>
-        {t("hello7")}
+        {t("Обратная связь")}
       </button>
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />

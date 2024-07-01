@@ -102,11 +102,11 @@ function Contact() {
             </Flex>
             <Flex m={"10px 0"} gap={"20px"} align={"center"}>
               <Image src={Pochta} />
-              <Text {...css.link}>centurysilkroad_uz@mail.ru</Text>
+              <Text {...css.link}>Assitechbio@gmail.com</Text>
             </Flex>
             <Flex m={"10px 0"} gap={"20px"} align={"center"}>
               <Image src={Phone} />
-              <Text {...css.link}>+998 97 747 28 06</Text>
+              <Text {...css.link}> +998 95 843 77 17</Text>
             </Flex>
             <Flex m={"10px 0"} gap={"20px"} align={"center"}>
               <Image src={Hour} />
@@ -166,7 +166,7 @@ function Contact() {
                 </FormControl>
               </Box>
               <Button type="submit" onClick={sendMessage} {...css.button}>
-                {t("hello21")}
+                {t("Yuborish")}
               </Button>
             </form>
           </Box>

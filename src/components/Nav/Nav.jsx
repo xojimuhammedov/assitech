@@ -3,7 +3,6 @@ import Instagram from "../../assets/svg/Instagram";
 import Telegram from "../../assets/svg/Telegram";
 import Facebook from "../../assets/svg/Facebook";
 import { Link as LinkChakra } from "@chakra-ui/react";
-import YouTube from "../../assets/svg/YouTube";
 import TimeOut from "./../TimeOut";
 
 function Nav() {

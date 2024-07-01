@@ -24,16 +24,18 @@ function Navbar() {
             <Box display={{ base: "block", lg: "none" }}>
               {/* <NavModal /> */}
             </Box>
-            <Link {...css.link} href="#">
+            <Link onClick={() => navigate("/")} {...css.link} href="#about">
               {t("About Us")}
             </Link>
-            <Link {...css.link} href="#about">
+            <Link onClick={() => navigate("/")} {...css.link} href="#product">
               {t("Projects")}
             </Link>
-            <Link {...css.link} href="#product">
+            <Link onClick={() => navigate("/")} {...css.link} href="#news">
               {t("News")}
             </Link>
-            <Link {...css.link}>{t("Contact")}</Link>
+            <Link onClick={() => navigate("/")} {...css.link}>
+              {t("Contact")}
+            </Link>
             {/* <Link {...css.link} href="#contact">
               {t("hello6")}
             </Link> */}

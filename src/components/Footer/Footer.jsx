@@ -1,11 +1,9 @@
 import { Box, Flex, Heading, Link, Text } from "@chakra-ui/react";
-// import Instagram from "../assets/Instagram";
-// import Telegram from "../assets/Telegram";
-// import Facebook from "../assets/Facebook";
-// import Phone from "../assets/Phone";
 import Iframe from "react-iframe";
 import { useTranslation } from "react-i18next";
-// import Whatsapp from "../assets/Whatsapp";
+import Instagram from "../../assets/svg/Instagram";
+import Telegram from "../../assets/svg/Telegram";
+import Facebook from "../../assets/svg/Facebook";
 
 function Footer() {
   const { t } = useTranslation();
@@ -34,28 +32,26 @@ function Footer() {
             </Link>
             <Text {...css.name}>Mail:</Text>
             <Link {...css.text} href="#">
-              info@group.uz
+              Assitechbio@gmail.com
             </Link>
             <Text {...css.name}>{t("Working schedule:")}</Text>
             <Text {...css.text}>Monday - Friday: 9:00 - 18:00</Text>
             <Text {...css.name}>{t("We are in social networks")}</Text>
-            {/* <Flex gap={"15px"} align={"center"}>
-              <Link className="navbar-link" href="#">
-                <Instagram />
+            <Flex mt={'20px'} gap={"15px"} align={"center"}>
+              <Link
+                className="navbar-link"
+                href="https://www.instagram.com/assitechbio">
+                <Instagram height={26} width={26} />
               </Link>
-              <Link className="navbar-link" href="#">
-                <Telegram />
+              <Link className="navbar-link" href="https://t.me/UZD_sistemi">
+                <Telegram height={26} width={26} />
               </Link>
-              <Link className="navbar-link" href="#">
-                <Facebook />
+              <Link
+                className="navbar-link"
+                href="https://www.facebook.com/rahmat.kham8?mibextid=ZbWKwL">
+                <Facebook height={26} width={26} />
               </Link>
-              <Link className="navbar-link" href="tel:+998958437717">
-                <Phone />
-              </Link>
-              <Link className="navbar-link" href="tel:+998958437717">
-                <Whatsapp />
-              </Link>
-            </Flex> */}
+            </Flex>
             <Text {...css.subtext}>
               © 2024 ASSI Tech. {t("Все права защищены.")}
             </Text>

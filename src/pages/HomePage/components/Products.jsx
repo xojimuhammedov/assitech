@@ -40,7 +40,7 @@ function Products() {
           modules={[Pagination, Autoplay]}
           className="mySwiper product-swiper">
           <SwiperSlide>
-            <Link to={"/product"}>
+            <Link to={"/product/1"}>
               <Box {...css.item}>
                 <Text {...css.name}>
                   Низкотемпературный плазменный стерилизатор RENO – S130
@@ -54,7 +54,7 @@ function Products() {
             </Link>
           </SwiperSlide>
           <SwiperSlide>
-            <Link to={"/product"}>
+            <Link to={"/product/2"}>
               <Box {...css.item}>
                 <Text {...css.name}>
                   Анализатор cостава тела человека и содержания жировой/мышечной
@@ -69,7 +69,7 @@ function Products() {
             </Link>
           </SwiperSlide>
           <SwiperSlide>
-            <Link to={"/product"}>
+            <Link to={"/product/3"}>
               <Box {...css.item}>
                 <Text {...css.name}>Фетальный монитор SONICAID Team 3</Text>
                 <Image {...css.image} src={ProductThree} />
@@ -81,7 +81,7 @@ function Products() {
             </Link>
           </SwiperSlide>
           <SwiperSlide>
-            <Link to={"/product"}>
+            <Link to={"/product/4"}>
               <Box {...css.item}>
                 <Text {...css.name}>
                   Система диагностическая ультразвуковая стационарная V6.
@@ -95,7 +95,7 @@ function Products() {
             </Link>
           </SwiperSlide>
           <SwiperSlide>
-            <Link to={"/product"}>
+            <Link to={"/product/5"}>
               <Box {...css.item}>
                 <Text {...css.name}>
                   Система диагностическая ультразвуковая V7.
@@ -109,7 +109,7 @@ function Products() {
             </Link>
           </SwiperSlide>
           <SwiperSlide>
-            <Link to={"/product"}>
+            <Link to={"/product/6"}>
               <Box {...css.item}>
                 <Text {...css.name}>
                   Анализатор состава тела человека InBody S10
@@ -177,6 +177,6 @@ const css = {
     fontWeight: "bold",
     position: "absolute",
     bottom: "15px",
-    right:"10px",
+    right: "10px",
   },
 };
