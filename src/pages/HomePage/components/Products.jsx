@@ -20,7 +20,7 @@ import { Link } from "react-router-dom";
 
 function Products() {
   return (
-    <Box className="product" mt={"220px"}>
+    <Box id="product" className="product" mt={"220px"}>
       <Box className="container">
         <Flex mb={"30px"} gap={"25px"} align={"center"}>
           <Heading {...css.title}>Новинки</Heading>

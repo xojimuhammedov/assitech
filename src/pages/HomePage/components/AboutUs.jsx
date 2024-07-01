@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 function AboutUs() {
   const { t } = useTranslation();
   return (
-    <Box p={"35px 0"}>
+    <Box id="about" p={"35px 0"}>
       <Box className="container">
         <Fade bottom>
           <Heading {...css.name}>{t("ASSI Tech")}</Heading>
