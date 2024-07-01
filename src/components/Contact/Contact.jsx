@@ -97,7 +97,7 @@ function Contact() {
             <Flex m={"10px 0"} gap={"20px"} align={"center"}>
               <Image src={Adress} />
               <Text {...css.link}>
-                86 Tursunzoda street, Yangihayot region, Tashkent, Uzbekistan
+                massiv 11 52B, Yunusobod district Tashkent, Uzbekistan
               </Text>
             </Flex>
             <Flex m={"10px 0"} gap={"20px"} align={"center"}>
@@ -106,7 +106,7 @@ function Contact() {
             </Flex>
             <Flex m={"10px 0"} gap={"20px"} align={"center"}>
               <Image src={Phone} />
-              <Text {...css.link}> +998 95 843 77 17</Text>
+              <Text {...css.link}> +998 99 815 98 85</Text>
             </Flex>
             <Flex m={"10px 0"} gap={"20px"} align={"center"}>
               <Image src={Hour} />
@@ -116,7 +116,9 @@ function Contact() {
           <Box
             {...css.right}
             width={{ xl: "50%", md: "80%", sm: "90%", base: "100%" }}>
-            <Heading {...css.title}>{t("Bizga qanday savolingiz bor?")}</Heading>
+            <Heading {...css.title}>
+              {t("Bizga qanday savolingiz bor?")}
+            </Heading>
             <form action="">
               <Box m="25px 0">
                 <FormControl isRequired>

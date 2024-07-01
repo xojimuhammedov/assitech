@@ -18,17 +18,13 @@ function Footer() {
             <Text {...css.name}>
               {t("Company address / Central Sales Office:")}
             </Text>
-            <Text {...css.text}>Tashkent, Olmazor district, Kokzor Tor 15</Text>
-            <Text {...css.name}>
-              {t("Sales office on the territory of the project:")}
+            <Text {...css.text}>
+              Tashkent, Olmazor Yunusobod, massiv 11 52B
             </Text>
-            <Text {...css.text}>Tashkent, Olmazor district, Kokzor Tor 15</Text>
             <Text {...css.name}>Phone:</Text>
-            <Link {...css.text} href="tel:+998935527217">
-              +998 93 552 72 17
-            </Link>
-            <Link {...css.text} pl={"20px"} href="tel:+998958437717">
-              +998 95 843 77 17
+
+            <Link {...css.text} href="tel:+998998159885">
+              +998 99 815 98 85
             </Link>
             <Text {...css.name}>Mail:</Text>
             <Link {...css.text} href="#">
@@ -37,7 +33,7 @@ function Footer() {
             <Text {...css.name}>{t("Working schedule:")}</Text>
             <Text {...css.text}>Monday - Friday: 9:00 - 18:00</Text>
             <Text {...css.name}>{t("We are in social networks")}</Text>
-            <Flex mt={'20px'} gap={"15px"} align={"center"}>
+            <Flex mt={"20px"} gap={"15px"} align={"center"}>
               <Link
                 className="navbar-link"
                 href="https://www.instagram.com/assitechbio">
@@ -57,7 +53,7 @@ function Footer() {
             </Text>
           </Box>
           <Iframe
-            url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.641822092033!2d69.2459091758749!3d41.31665497130886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b40d847941d%3A0x5765a18b352df71e!2sTashkent%20City%20Park!5e0!3m2!1sen!2s!4v1717142347970!5m2!1sen!2s"
+            url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3298.8109377689675!2d69.28942496359096!3d41.37019392500077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef334e5278a27%3A0x4d04cbba7c68f2fa!2sYunusabad-11%2C%20100037%2C%20Tashkent%2C%20Tashkent%20Region%2C%20Uzbekistan!5e0!3m2!1sen!2s!4v1719814194681!5m2!1sen!2s"
             width="640px"
             height="100%"
             id=""
