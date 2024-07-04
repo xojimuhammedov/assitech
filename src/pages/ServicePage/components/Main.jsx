@@ -26,7 +26,7 @@ function Main() {
           </Box>
         </Flex>
 
-        <Flex justifyContent={"space-evenly"}>
+        <Flex mt={"80px"} justifyContent={"space-evenly"}>
           <Image {...css.subimage} src={MedicTwo} alt="MedicOne" />
           <Box>
             <Heading {...css.title}>Постгарантийное обслуживание</Heading>
@@ -96,6 +96,7 @@ const css = {
     letterSpacing: "-1px",
     color: "gray",
     width: "650px",
+    fontFamily: "Unbounded !important",
   },
   image: {
     width: "450px",
@@ -133,7 +134,7 @@ const css = {
     marginTop: "25px",
   },
   name: {
-    fontSize: "23px",
+    fontSize: "20px",
     fontWeight: "600",
     color: "gray",
     marginBottom: "10px",
@@ -144,6 +145,7 @@ const css = {
     borderTop: "0.5px solid gray",
     width: "auto",
     display: "inline-block",
+    fontFamily: "Unbounded !important",
   },
   subname: {
     color: "gray",

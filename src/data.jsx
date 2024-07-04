@@ -5,6 +5,14 @@ import ProductFour from "./assets/product4.jpg";
 import ProductFive from "./assets/product5.png";
 import ProductSix from "./assets/product6.jpg";
 
+import ServiceOne from "./assets/service1.jpg";
+import ServiceTwo from "./assets/service2.jpg";
+import ServiceThree from "./assets/service3.jpg";
+import ServiceFour from "./assets/service4.jpg";
+import ServiceFive from "./assets/service5.jpg";
+import ServiceSix from "./assets/service6.jpg";
+import ServiceSeven from "./assets/service7.jpg";
+
 export const productData = [
   {
     id: 1,
@@ -66,5 +74,43 @@ export const productData = [
     price: "11 700 ye",
     brend: "InBody",
     garanty: "12 месяцев",
+  },
+];
+
+export const serviceData = [
+  {
+    id: 1,
+    title: "Сервис",
+    image: ServiceOne,
+  },
+  {
+    id: 2,
+    title: "Производство",
+    image: ServiceTwo,
+  },
+  {
+    id: 3,
+    title: "Комплексное оснащение",
+    image: ServiceThree,
+  },
+  {
+    id: 4,
+    title: "Лизинг",
+    image: ServiceFour,
+  },
+  {
+    id: 5,
+    title: "Trade-in",
+    image: ServiceFive,
+  },
+  {
+    id: 6,
+    title: "Обучение",
+    image: ServiceSix,
+  },
+  {
+    id: 7,
+    title: "ProVisio",
+    image: ServiceSeven,
   },
 ];

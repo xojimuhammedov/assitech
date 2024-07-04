@@ -17,6 +17,7 @@ import ProductFour from "../../../assets/services4.jpg";
 import ProductFive from "../../../assets/services5.jpg";
 import ProductSix from "../../../assets/servies6.jpg";
 import ProductSeven from "../../../assets/services7.jpg";
+import { Link } from "react-router-dom";
 
 function Services() {
   return (
@@ -40,46 +41,60 @@ function Services() {
           modules={[Pagination, Autoplay]}
           className="mySwiper">
           <SwiperSlide>
-            <Box {...css.item}>
-              <Text {...css.name}>Сервис</Text>
-              <Image {...css.image} src={ProductOne} />
-            </Box>
+            <Link to={"/service/1"}>
+              <Box {...css.item}>
+                <Text {...css.name}>Сервис</Text>
+                <Image {...css.image} src={ProductOne} />
+              </Box>
+            </Link>
           </SwiperSlide>
           <SwiperSlide>
-            <Box {...css.item}>
-              <Text {...css.name}>Производство</Text>
-              <Image {...css.image} src={ProductTwo} />
-            </Box>
+            <Link to={"/service/2"}>
+              <Box {...css.item}>
+                <Text {...css.name}>Производство</Text>
+                <Image {...css.image} src={ProductTwo} />
+              </Box>
+            </Link>
           </SwiperSlide>
           <SwiperSlide>
-            <Box {...css.item}>
-              <Text {...css.name}>Комплексное оснащение</Text>
-              <Image {...css.image} src={ProductThree} />
-            </Box>
+            <Link to={"/service/3"}>
+              <Box {...css.item}>
+                <Text {...css.name}>Комплексное оснащение</Text>
+                <Image {...css.image} src={ProductThree} />
+              </Box>
+            </Link>
           </SwiperSlide>
           <SwiperSlide>
-            <Box {...css.item}>
-              <Text {...css.name}>Лизинг</Text>
-              <Image {...css.image} src={ProductFour} />
-            </Box>
+            <Link to={"/service/4"}>
+              <Box {...css.item}>
+                <Text {...css.name}>Лизинг</Text>
+                <Image {...css.image} src={ProductFour} />
+              </Box>
+            </Link>
           </SwiperSlide>
           <SwiperSlide>
-            <Box {...css.item}>
-              <Text {...css.name}>Trade-in</Text>
-              <Image {...css.image} src={ProductFive} />
-            </Box>
+            <Link to={"/service/5"}>
+              <Box {...css.item}>
+                <Text {...css.name}>Trade-in</Text>
+                <Image {...css.image} src={ProductFive} />
+              </Box>
+            </Link>
           </SwiperSlide>
           <SwiperSlide>
-            <Box {...css.item}>
-              <Text {...css.name}>Обучение</Text>
-              <Image {...css.image} src={ProductSix} />
-            </Box>
+            <Link to={"/service/6"}>
+              <Box {...css.item}>
+                <Text {...css.name}>Обучение</Text>
+                <Image {...css.image} src={ProductSix} />
+              </Box>
+            </Link>
           </SwiperSlide>
           <SwiperSlide>
-            <Box {...css.item}>
-              <Text {...css.name}>ProVisio</Text>
-              <Image {...css.image} src={ProductSeven} />
-            </Box>
+            <Link to={"/service/7"}>
+              <Box {...css.item}>
+                <Text {...css.name}>ProVisio</Text>
+                <Image {...css.image} src={ProductSeven} />
+              </Box>
+            </Link>
           </SwiperSlide>
         </Swiper>
       </Box>
