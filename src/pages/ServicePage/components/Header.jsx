@@ -38,8 +38,14 @@ const css = {
   title: {
     position: "absolute",
     top: "70%",
-    fontSize: "55px",
-    lineHeight: "60px",
+    fontSize: {
+      base: "30px",
+      lg: "55px",
+    },
+    lineHeight: {
+      base: "35px",
+      lg: "60px",
+    },
     color: "white",
     fontFamily: "Unbounded !important",
   },

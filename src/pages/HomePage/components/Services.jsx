@@ -38,6 +38,20 @@ function Services() {
             delay: 2000,
             disableOnInteraction: false,
           }}
+          breakpoints={{
+            350: {
+              slidesPerView: 1,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+            900: {
+              slidesPerView: 3,
+            },
+            1200: {
+              slidesPerView: 4,
+            },
+          }}
           modules={[Pagination, Autoplay]}
           className="mySwiper">
           <SwiperSlide>
@@ -106,12 +120,21 @@ export default Services;
 
 const css = {
   title: {
-    fontSize: "50px",
-    lineHeight: "55px",
+    fontSize: {
+      base: "23px",
+      lg: "50px",
+    },
+    lineHeight: {
+      base: "30px",
+      lg: "55px",
+    },
     fontFamily: "Unbounded !important",
     color: "#110D60",
     transition: "0.3s ease",
-    width: "850px",
+    width: {
+      base: "100%",
+      lg: "850px",
+    },
 
     _hover: {
       color: "#C3242A",

@@ -42,13 +42,25 @@ const css = {
   main: {
     background: "#F7F7F7",
     padding: "50px 0",
-    marginTop: "120px",
+    marginTop: {
+      base: "30px",
+      lg: "120px",
+    },
     position: "relative",
   },
   title: {
-    fontSize: "65px",
-    lineHeight: "60px",
-    width: "900px",
+    fontSize: {
+      base: "25px",
+      lg: "65px",
+    },
+    lineHeight: {
+      base: "30px",
+      lg: "60px",
+    },
+    width: {
+      base: "100%",
+      lg: "900px",
+    },
     fontWeight: "500",
     letterSpacing: "-1.5px",
     color: "#110D60",
@@ -56,19 +68,46 @@ const css = {
   left: {
     position: "absolute",
     right: 0,
-    top: "-20%",
+    top: {
+      base: "20%",
+      lg: "-20%",
+    },
+    width: {
+      base: "250px",
+      lg: "auto",
+    },
   },
   right: {
     position: "absolute",
     left: "50px",
-    top: "75%",
+    top: {
+      base: "90%",
+      lg: "75%",
+    },
+    width: {
+      base: "250px",
+      lg: "auto",
+    },
   },
   titles: {
-    fontSize: "63px",
-    lineHeight: "58px",
+    fontSize: {
+      base: "25px",
+      lg: "65px",
+    },
+    lineHeight: {
+      base: "30px",
+      lg: "60px",
+    },
+    width: {
+      base: "100%",
+      lg: "900px",
+    },
     fontWeight: "500",
     letterSpacing: "-1.5px",
-    width: "900px",
     color: "#110D60",
+    marginTop: {
+      base: "60px",
+      lg: 0,
+    },
   },
 };

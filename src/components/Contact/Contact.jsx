@@ -76,7 +76,12 @@ function Contact() {
 
   const { t } = useTranslation();
   return (
-    <Box id="contact" p={"35px 150px"}>
+    <Box
+      id="contact"
+      p={{
+        base: "30px 0px",
+        lg: "35px 150px",
+      }}>
       <Box className="container">
         <Flex
           flexDirection={{
@@ -184,8 +189,14 @@ const css = {
   image: {
     width: "600px",
   },
+  list: {
+    width: "100%",
+  },
   title: {
-    fontSize: "30px",
+    fontSize: {
+      base: "22px",
+      lg: "30px",
+    },
     lineHeight: "35px",
     fontWeight: 600,
     color: "#fff",

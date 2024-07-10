@@ -39,7 +39,10 @@ const css = {
     maxWidth: "100%",
     minWidth: "100%",
     objectFit: "cover",
-    height: "550px",
+    height: {
+      base: "300px",
+      md: "550px",
+    },
     borderRadius: "20px",
   },
 };

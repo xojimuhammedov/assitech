@@ -37,6 +37,20 @@ function Products() {
             delay: 2000,
             disableOnInteraction: false,
           }}
+          breakpoints={{
+            350: {
+              slidesPerView: 1,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+            900: {
+              slidesPerView: 3,
+            },
+            1200: {
+              slidesPerView: 4,
+            },
+          }}
           modules={[Pagination, Autoplay]}
           className="mySwiper product-swiper">
           <SwiperSlide>
@@ -132,8 +146,14 @@ export default Products;
 
 const css = {
   title: {
-    fontSize: "50px",
-    lineHeight: "55px",
+    fontSize: {
+      base: "20px",
+      lg: "50px",
+    },
+    lineHeight: {
+      base: "25px",
+      lg: "55px",
+    },
     fontFamily: "Unbounded !important",
     color: "gray",
     transition: "0.3s ease",

@@ -12,9 +12,12 @@ import MedicTwo from "../../../assets/medic1.jpg";
 
 function Main() {
   return (
-    <Box p={"50px"}>
+    <Box p={{ base: "50px 0", lg: "50px" }}>
       <Box className="container">
-        <Flex m={"30px 0"} justifyContent={"space-evenly"}>
+        <Flex
+          flexDirection={{ base: "column", lg: "row" }}
+          m={"30px 0"}
+          justifyContent={"space-evenly"}>
           <Image {...css.image} src={MedicOne} alt="MedicOne" />
           <Box>
             <Heading {...css.title}>Ремонт медицинской техники</Heading>
@@ -26,7 +29,10 @@ function Main() {
           </Box>
         </Flex>
 
-        <Flex mt={"80px"} justifyContent={"space-evenly"}>
+        <Flex
+          flexDirection={{ base: "column", lg: "row" }}
+          mt={"80px"}
+          justifyContent={"space-evenly"}>
           <Image {...css.subimage} src={MedicTwo} alt="MedicOne" />
           <Box>
             <Heading {...css.title}>Постгарантийное обслуживание</Heading>
@@ -56,7 +62,10 @@ function Main() {
         <Heading mt={"50px"} {...css.title}>
           Особенности обслуживания
         </Heading>
-        <SimpleGrid mt={"80px"} columns={3} gap={"50px"}>
+        <SimpleGrid
+          mt={"80px"}
+          columns={{ base: 1, md: 2, lg: 3 }}
+          gap={"50px"}>
           <Box>
             <Heading {...css.name}>Комплексное оснащение</Heading>
             <Text {...css.subname}>
@@ -89,13 +98,22 @@ export default Main;
 
 const css = {
   title: {
-    fontSize: "50px",
-    lineHeight: "55px",
+    fontSize: {
+      base: "20px",
+      lg: "55px",
+    },
+    lineHeight: {
+      base: "25px",
+      lg: "60px",
+    },
     marginBottom: "16px",
     fontWeight: 600,
     letterSpacing: "-1px",
     color: "gray",
-    width: "650px",
+    width: {
+      base: "100%",
+      lg: "650px",
+    },
     fontFamily: "Unbounded !important",
   },
   image: {
@@ -108,16 +126,25 @@ const css = {
     lineHeight: "25px",
     marginBottom: "16px",
     letterSpacing: "-0.5px",
-    width: "550px",
+    width: {
+      base: "100%",
+      lg: "550px",
+    },
   },
   subimage: {
-    height: "550px",
+    height: {
+      base: "350px",
+      lg: "550px",
+    },
     objectFit: "cover",
     width: "450px",
   },
   subtext: {
     fontSize: "20px",
-    width: "400px",
+    width: {
+      base: "100%",
+      lg: "400px",
+    },
     margin: "10px 0",
     fontWeight: "600",
     color: "gray",
@@ -127,7 +154,10 @@ const css = {
   },
   button: {
     height: "60px",
-    width: "420px",
+    width: {
+      base: "100%",
+      lg: "420px",
+    },
     fontSize: "20px",
     letterSpacing: "-0.5px",
     lineHeight: "25px",

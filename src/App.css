@@ -104,3 +104,9 @@
 .css-gv1iwz {
   top: 5px !important;
 }
+
+@media (max-width: 768px) {
+  .footer-location {
+    width: 100% !important;
+  }
+}
