@@ -1,11 +1,23 @@
 import { Box, Button, Flex, Heading, Image, Text } from "@chakra-ui/react";
 import { useParams } from "react-router-dom";
-import { productData } from "../../../data";
+import { useEffect, useState } from "react";
+import axios from "axios";
+import { useTranslation } from "react-i18next";
 
 function About() {
-  const data = productData;
+  // const data = productData;
   const { id } = useParams();
-  const about = data.find((item) => item.id === Number(id));
+  const [t, i18n] = useTranslation();
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get(`https://v1.centurysilkroadtravel.uz/api/products/${id}`)
+      .then((res) => setProducts(res.data.data))
+      .catch((err) => {
+        console.log(err);
+      });
+  }, [id]);
 
   return (
     <Box p={"50px 0"}>
@@ -15,15 +27,19 @@ function About() {
           justifyContent={"space-between"}
           width={"100%"}>
           <Box {...css.left}>
-            <Image {...css.image} src={about?.image} />
+            <Image
+              {...css.image}
+              src={`https://v1.centurysilkroadtravel.uz/api/uploads/images/${products?.image_src}`}
+            />
           </Box>
           <Box>
-            <Heading {...css.title}>{about?.title}</Heading>
-            <Text {...css.text}>{about?.description}</Text>
+            <Heading {...css.title}>
+              {products[`title_${i18n?.language}`]}
+            </Heading>
+            <Text {...css.text}>{products[`text_${i18n?.language}`]}</Text>
             <Flex
               flexDirection={{ base: "column", lg: "row" }}
               justifyContent={"space-between"}>
-              <Text {...css.subname}>Бренд: {about?.brend}</Text>
               <Text {...css.subtext}>
                 Бесплатная доставка: Бесплатный монтаж, наладка и обучение
               </Text>
@@ -31,13 +47,11 @@ function About() {
             <Flex
               flexDirection={{ base: "column", lg: "row" }}
               justifyContent={"space-between"}>
-              <Text {...css.subname}>Гарантия: {about?.garanty}</Text>
               <Text {...css.subtext}>Рассрочка на 6 месяцев</Text>
             </Flex>
 
             <Flex flexDirection={{ base: "column", lg: "row" }}>
               <Box>
-                <Text {...css.price}>от {about?.price}</Text>
                 <Text {...css.subtext}>
                   Цены на сайте могут изменяться при выборе комплектующих
                 </Text>
@@ -118,8 +132,6 @@ const css = {
     lineHeight: "26px",
     marginBottom: "15px",
     fontWeight: "normal",
-    marginTop: "15px",
-    width: "350px",
   },
   button: {
     background: "#C3242A",
@@ -132,7 +144,7 @@ const css = {
     cursor: "pointer",
     border: "2px solid #C3242A",
     width: "100%",
-    marginTop: "40px",
+    marginTop: "60px",
     letterSpacing: "1.5px",
 
     _hover: {
