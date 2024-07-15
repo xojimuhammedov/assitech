@@ -131,7 +131,7 @@
 .home-fixed {
   position: fixed;
   z-index: 99999;
-  background-color: #110D60;
+  background-color: #110d60;
   top: 85%;
   right: 5%;
   width: 45px;
@@ -161,5 +161,11 @@
 @media (max-width: 768px) {
   .footer-location {
     width: 100% !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .custom-dropdown-menu {
+    top: 2%;
   }
 }

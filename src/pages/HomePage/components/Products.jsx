@@ -53,7 +53,7 @@ function Products() {
   return (
     <Box id="product" className="product" mt={"220px"}>
       <Box className="container">
-        <Flex mb={"30px"} gap={"25px"} align={"center"}>
+        <Flex mb={"30px"} flexWrap={'wrap'} gap={"25px"} align={"center"}>
           {category.map((item, index) => (
             <Heading
               onClick={() => setCategoryId(item.id)}
@@ -135,7 +135,7 @@ const css = {
       lg: "40px",
     },
     lineHeight: {
-      base: "25px",
+      base: "23px",
       lg: "45px",
     },
     fontFamily: "Unbounded !important",
