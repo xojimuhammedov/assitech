@@ -2,6 +2,7 @@ import { Box, Flex, Image, Link } from "@chakra-ui/react";
 import { Link as HomeLink, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import Assitech from "../../assets/assitech.jpg";
+import Language from "../Language/Language";
 
 function Navbar() {
   const { t } = useTranslation();
@@ -36,6 +37,7 @@ function Navbar() {
             <Link onClick={() => navigate("/")} {...css.link}>
               {t("Contact")}
             </Link>
+            <Language />
             {/* <Link {...css.link} href="#contact">
               {t("hello6")}
             </Link> */}

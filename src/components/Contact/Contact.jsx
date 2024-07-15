@@ -102,12 +102,16 @@ function Contact() {
             <Flex m={"10px 0"} gap={"20px"} align={"center"}>
               <Image src={Adress} />
               <Text {...css.link}>
-                massiv 11 52B, Yunusobod district Tashkent, Uzbekistan
+                Massiv 11 52B, Yunusobod district Tashkent, Uzbekistan
               </Text>
             </Flex>
             <Flex m={"10px 0"} gap={"20px"} align={"center"}>
               <Image src={Pochta} />
-              <Text {...css.link}>Assitechbio@gmail.com</Text>
+              <Text display={'flex'} flexDirection={'column'} {...css.link}>
+                <a href="mailto:Assitechbio@gmail.com">sales@assitech.uz</a>
+                <a href="mailto:Akramov@gmail.com">Ceo@assitech.uz</a>
+                <a href="mailto:farkhodovasevinch2004@gmail.com">Sevinch@assitech.uz</a>
+              </Text>
             </Flex>
             <Flex m={"10px 0"} gap={"20px"} align={"center"}>
               <Image src={Phone} />

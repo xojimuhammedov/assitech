@@ -2,16 +2,18 @@ import { Box, Flex, Image, Text } from "@chakra-ui/react";
 import AparatOne from "../../../assets/aparat.png";
 import AparatTwo from "../../../assets/aparat1.png";
 import { Fade } from "react-reveal";
+import { useTranslation } from "react-i18next";
 
 function Main() {
+  const { t } = useTranslation();
   return (
     <Box {...css.main}>
       <Box className="container">
         <Flex>
           <Fade bottom>
             <Text {...css.title}>
-              <b style={{ color: "#C3242A" }}>Поставляем</b> медицинское
-              оборудование напрямую от производителя
+              <b style={{ color: "#C3242A" }}>{t("Поставляем")}</b>{" "}
+              {t("медицинское оборудование напрямую от производителя")}
             </Text>
           </Fade>
           <Box>
@@ -25,8 +27,10 @@ function Main() {
           <Flex width={"100%"} justifyContent={"flex-end"}>
             <Fade bottom>
               <Text {...css.titles}>
-                <b style={{ color: "#C3242A" }}>Решаем</b> задачи комплексного
-                медицинского оснащения и сервисного обслуживания
+                <b style={{ color: "#C3242A" }}>{t("Решаем")}</b>{" "}
+                {t(
+                  "задачи комплексного медицинского оснащения и сервисного обслуживания"
+                )}
               </Text>
             </Fade>
           </Flex>

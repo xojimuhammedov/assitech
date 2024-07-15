@@ -44,29 +44,30 @@ function TimeOut() {
   return (
     <>
       <button className="timeout-modal" onClick={onOpen}>
-        {t("Обратная связь")}
+        {t("Contact")}
       </button>
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
         <ModalContent {...css.list}>
-          <Heading color="#2E3A6B" textAlign="center">
-            {t("hello6")}
+          <Heading color="#2E3A6B" fontSize={'30px'} textAlign="center">
+            {t("Bizga qanday savolingiz bor?")}
           </Heading>
           <form action="">
             <Box m="25px 0">
               <FormControl isRequired>
-                <FormLabel {...css.label}> {t("hello18")}</FormLabel>
+                <FormLabel {...css.label}> {t("Ism")}</FormLabel>
                 <Input
                   value={nameValue}
                   onChange={(e) => changeName(e.target.value)}
                   {...css.input}
-                  placeholder={t("hello18")}
+                  required
+                  placeholder={t("Ismingizni kiriting")}
                 />
               </FormControl>
             </Box>
             <Box m="25px 0">
               <FormControl isRequired>
-                <FormLabel {...css.label}> {t("hello19")}</FormLabel>
+                <FormLabel {...css.label}> {t("Telefon raqami")}</FormLabel>
                 <InputGroup>
                   <InputLeftElement pointerEvents="none">
                     <PhoneIcon color="gray.300" />
@@ -77,16 +78,17 @@ function TimeOut() {
                     onChange={(e) => changeNumber(e.target.value)}
                     size="md"
                     type="tel"
-                    placeholder={t("hello19")}
+                    required
+                    placeholder={t("Telefon raqami")}
                   />
                 </InputGroup>
               </FormControl>
             </Box>
             <Box m="25px 0">
               <FormControl isRequired>
-                <FormLabel {...css.label}> {t("hello20")}</FormLabel>
+                <FormLabel {...css.label}> {t("Sizning xabaringiz")}</FormLabel>
                 <Textarea
-                  placeholder={t("hello20")}
+                  placeholder={t("Sizning xabaringiz")}
                   size="md"
                   {...css.textarea}
                   value={textValue}

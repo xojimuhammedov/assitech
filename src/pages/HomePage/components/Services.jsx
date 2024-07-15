@@ -18,15 +18,17 @@ import ProductFive from "../../../assets/services5.jpg";
 import ProductSix from "../../../assets/servies6.jpg";
 import ProductSeven from "../../../assets/services7.jpg";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 function Services() {
+  const { t } = useTranslation();
   return (
     <Box className="product" p={"50px 0"}>
       <Box className="container">
         <Heading {...css.title}>
           {" "}
-          <b style={{ color: "#C3242A" }}>Сопровождаем</b> клиента на всех
-          этапах
+          <b style={{ color: "#C3242A" }}>{t("Сопровождаем")}</b>{" "}
+          {t("клиента на всех этапах")}
         </Heading>
         <Swiper
           slidesPerView={4}

@@ -44,7 +44,7 @@ function ButtonForm({
   }
   return (
     <Button type="submit" width={width} onClick={sendMessage} {...css.button}>
-      {t("hello21")}
+      {t("Yuborish")}
     </Button>
   );
 }

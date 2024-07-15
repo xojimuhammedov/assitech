@@ -7,11 +7,17 @@ import CompanyPage from "./pages/CompanyPage/CompanyPage";
 import Footer from "./components/Footer/Footer";
 import ProductPage from "./pages/ProductPage/ProductPage";
 import ServicePage from "./pages/ServicePage/ServicePage";
+import Phone from "./assets/Phone";
 function App() {
   return (
     <>
       <Nav />
       <Navbar />
+      <div className="home-fixed">
+        <a href="tel:+998998159885">
+          <Phone />
+        </a>
+      </div>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/company" element={<CompanyPage />} />
