@@ -21,10 +21,7 @@ function Navbar() {
             />
           </HomeLink>
           <Flex gap="25px">
-            {/* <Language /> */}
-            <Box display={{ base: "block", lg: "none" }}>
-              {/* <NavModal /> */}
-            </Box>
+            <Box display={{ base: "block", lg: "none" }}></Box>
             <Link onClick={() => navigate("/")} {...css.link} href="#about">
               {t("About Us")}
             </Link>
@@ -37,10 +34,10 @@ function Navbar() {
             <Link onClick={() => navigate("/")} {...css.link}>
               {t("Contact")}
             </Link>
+            <Link onClick={() => navigate("/course")} {...css.link}>
+              {t("Course")}
+            </Link>
             <Language />
-            {/* <Link {...css.link} href="#contact">
-              {t("hello6")}
-            </Link> */}
           </Flex>
         </Flex>
       </Box>

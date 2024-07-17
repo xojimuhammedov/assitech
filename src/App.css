@@ -6,6 +6,12 @@
   font-weight: 400;
 }
 
+.course-video {
+  width: 350px;
+  object-fit: cover;
+  height: 500px;
+}
+
 .timeout-modal {
   background-color: #c3242a;
   color: #fff;
