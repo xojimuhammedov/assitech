@@ -149,6 +149,32 @@
   box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.8);
 }
 
+.modal-open-button {
+  height: 30px;
+  border: 0;
+  outline: 0;
+  padding: 5px 10px;
+  position: relative;
+  width: 35px;
+  z-index: 20;
+  background-color: #c3242a;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-close-button {
+  background-color: rgb(24, 24, 100);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @keyframes pulse-white {
   0% {
     transform: scale(0.95);
@@ -174,7 +200,7 @@
   .custom-dropdown-menu {
     top: 2%;
   }
-  .nav-links{
+  .nav-links {
     font-size: 12px !important;
   }
 }

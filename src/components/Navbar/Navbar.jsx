@@ -3,6 +3,7 @@ import { Link as HomeLink, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import Assitech from "../../assets/assitech.jpg";
 import Language from "../Language/Language";
+import NavModal from "../NavModal";
 
 function Navbar() {
   const { t } = useTranslation();
@@ -14,7 +15,7 @@ function Navbar() {
           <HomeLink to="/">
             <Image
               w={{ xl: "220px", md: "150px", sm: "150px", base: "200px" }}
-              h={{ xl: "65px", md: "40px", sm: "40px", base: "45px" }}
+              h={{ xl: "65px", md: "40px", sm: "40px", base: "55px" }}
               src={Assitech}
               alt="Assitech"
               objectFit={"contain"}
@@ -39,6 +40,7 @@ function Navbar() {
             </Link>
             <Language />
           </Flex>
+          <NavModal />
         </Flex>
       </Box>
     </Box>
