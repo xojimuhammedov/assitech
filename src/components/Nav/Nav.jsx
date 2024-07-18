@@ -9,7 +9,9 @@ function Nav() {
   return (
     <Box {...css.box}>
       <Box className="container">
-        <Flex className="nav" justifyContent="flex-end">
+        <Flex
+          className="nav"
+          justifyContent={{ base: "flex-start", lg: "flex-end" }}>
           <Flex className="nav-list" gap="20px" align="center">
             <LinkChakra
               {...css.social}
@@ -48,12 +50,6 @@ const css = {
     padding: "10px 0",
   },
   social: {
-    display: {
-      xl: "block",
-      lg: "block",
-      md: "block",
-      sm: "none",
-      base: "none",
-    },
+    display: "block",
   },
 };
