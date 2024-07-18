@@ -43,8 +43,8 @@ function Contact() {
     setTextValue(null);
   };
   let bot = {
-    TOKEN: "6765528514:AAG32y-OX4yj8JLVO9ixso8jp7WZ8Khx4LA",
-    chatID: "-1002195363967",
+    TOKEN: "7492999008:AAHwiR77-tCJV5NcRN85Dbm6rwp6Gawu4Js",
+    chatID: "-1002225167766",
     message: `
           Assalomu alaykum sizga yangi xabar!%0A
           %0AIsmi 👤: ${nameValue}; 
@@ -107,10 +107,12 @@ function Contact() {
             </Flex>
             <Flex m={"10px 0"} gap={"20px"} align={"center"}>
               <Image src={Pochta} />
-              <Text display={'flex'} flexDirection={'column'} {...css.link}>
+              <Text display={"flex"} flexDirection={"column"} {...css.link}>
                 <a href="mailto:Assitechbio@gmail.com">sales@assitech.uz</a>
                 <a href="mailto:Akramov@gmail.com">Ceo@assitech.uz</a>
-                <a href="mailto:farkhodovasevinch2004@gmail.com">Sevinch@assitech.uz</a>
+                <a href="mailto:farkhodovasevinch2004@gmail.com">
+                  Sevinch@assitech.uz
+                </a>
               </Text>
             </Flex>
             <Flex m={"10px 0"} gap={"20px"} align={"center"}>

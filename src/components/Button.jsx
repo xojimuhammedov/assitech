@@ -12,8 +12,8 @@ function ButtonForm({
 }) {
   const { t } = useTranslation();
   let bot = {
-    TOKEN: "6723934365:AAEqNFMcuVaaLYOT7Dj-lBEBtgTwUdE0ogw",
-    chatID: "-1002064336590",
+    TOKEN: "7492999008:AAHwiR77-tCJV5NcRN85Dbm6rwp6Gawu4Js",
+    chatID: "-1002225167766",
     message: `
           Assalomu alaykum sizga yangi xabar!%0A
           %0AIsmi 👤: ${nameValue}; 
