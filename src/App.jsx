@@ -9,6 +9,7 @@ import ProductPage from "./pages/ProductPage/ProductPage";
 import ServicePage from "./pages/ServicePage/ServicePage";
 import Phone from "./assets/Phone";
 import CoursePage from "./pages/CoursePage/CoursePage";
+import InstallPage from "./pages/InstallPage/InstallPage";
 function App() {
   return (
     <>
@@ -24,6 +25,7 @@ function App() {
         <Route path="/company" element={<CompanyPage />} />
         <Route path="/product/:id" element={<ProductPage />} />
         <Route path="/course" element={<CoursePage />} />
+        <Route path="/instal" element={<InstallPage />} />
         <Route path="/service/:id" element={<ServicePage />} />
       </Routes>
       <Footer />

@@ -44,12 +44,6 @@ function About() {
                 Бесплатная доставка: Бесплатный монтаж, наладка и обучение
               </Text>
             </Flex>
-            <Flex
-              flexDirection={{ base: "column", lg: "row" }}
-              justifyContent={"space-between"}>
-              <Text {...css.subtext}>Рассрочка на 6 месяцев</Text>
-            </Flex>
-
             <Flex flexDirection={{ base: "column", lg: "row" }}>
               <Box>
                 <Text {...css.subtext}>

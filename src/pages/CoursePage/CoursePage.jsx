@@ -17,7 +17,7 @@ function CoursePage() {
       <Box className="container">
         <Heading {...css.title}>Курсы, которые у нас есть</Heading>
         <Text {...css.name}>НЕЙРОСОНОГРАФИЯ</Text>
-        <Text {...css.name}>ЗРОСЛАЯ ЭХОКАРДИОГРАФИЯ</Text>
+        <Text {...css.name}>ВЗРОСЛАЯ ЭХОКАРДИОГРАФИЯ</Text>
         <Text {...css.name}>ДЕТСКАЯ ЭХОКАРДИОГРАФИЯ </Text>
         <Text {...css.name}>АКУШЕРСТВО И ГИНЕКОЛОГИЯ</Text>
         <Text {...css.name}>ФЕТАЛЬНАЯ ЭХОКАРДИОГРАФИЯ</Text>

@@ -38,9 +38,14 @@ function Navbar() {
             <Link onClick={() => navigate("/course")} {...css.link}>
               {t("Course")}
             </Link>
+            <Link onClick={() => navigate("/instal")} {...css.link}>
+              {t("Установка")}
+            </Link>
             <Language />
           </Flex>
-          <NavModal />
+          <Box display={{ base: "block", lg: "none" }}>
+            <NavModal />
+          </Box>
         </Flex>
       </Box>
     </Box>

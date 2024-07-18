@@ -84,6 +84,15 @@ function NavModal() {
               {...css.link}>
               {t("Course")}
             </Link>
+
+            <Link
+              onClick={() => {
+                navigate("/instal");
+                onClose();
+              }}
+              {...css.link}>
+              {t("Установка")}
+            </Link>
             <Flex gap="10px 25px">
               <Link
                 {...css.social}
