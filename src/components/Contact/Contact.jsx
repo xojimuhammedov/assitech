@@ -20,6 +20,7 @@ import Adress from "../../assets/adres.jpg";
 import Phone from "../../assets/phone.jpg";
 import Pochta from "../../assets/pochta.jpg";
 import Hour from "../../assets/hour.jpg";
+import { toast } from "react-toastify";
 
 function Contact() {
   const [nameValue, setNameValue] = useState("");
@@ -66,7 +67,7 @@ function Contact() {
           handleClear();
         }
         window.location.reload();
-        // toast.success("Sizning xabaringiz muvaffaqiyatli yuborildi!");
+        toast.success("Sizning xabaringiz muvaffaqiyatli yuborildi!");
       },
       (error) => {
         console.log(error);
