@@ -3,6 +3,7 @@ import { useEffect, useRef } from "react";
 import CourseVideoOne from "../../assets/course1.mp4";
 import CourseVideoTwo from "../../assets/course2.mp4";
 import CourseVideoThree from "../../assets/course4.mp4";
+import CourseVideoFour from "../../assets/course5.mp4";
 
 function CoursePage() {
   const videoRef = useRef(null);
@@ -116,6 +117,46 @@ function CoursePage() {
             </Text>
             <Text {...css.text} mt={"15px"}>
               - клапанные патологии и их оценка по последным рекомендациям
+            </Text>
+          </Box>
+        </Flex>
+
+        <Flex
+          flexDirection={{ base: "column", md: "row" }}
+          mt={"15px"}
+          gap={"30px"}>
+          <video className="course-video" ref={videoRef} loop muted controls>
+            <source src={CourseVideoFour} type="video/mp4" />
+          </video>
+          <Box>
+            <Heading {...css.subname}>Курс «ДЕТСКАЯ ЭХОКАРДИОГРАФИЯ»</Heading>{" "}
+            <Text {...css.text} mt={"15px"}>
+              Будут детально разобраны врожденные пороки сердца, такие как:
+            </Text>
+            <Text {...css.text} mt={"15px"}>
+              - Дефект межпредсердной перегородки (ДМПП)
+            </Text>
+            <Text {...css.text} mt={"15px"}>
+              - Дефект межжелудочковой перегородки (ДМЖП)
+            </Text>
+            <Text {...css.text} mt={"15px"}>
+              - Открытый артериальный проток (ОАП)
+            </Text>
+            <Text {...css.text} mt={"15px"}>
+              - Тетрада Фалло
+            </Text>
+            <Text {...css.text} mt={"15px"}>
+              - Транспозиция магистральных сосудов (ТМС)
+            </Text>
+            <Text {...css.text} mt={"15px"}>
+              - Двойное отхождение магистральный артерий от правого желудочка
+              (ДОМС от ПЖ)
+            </Text>
+            <Text {...css.text} mt={"15px"}>
+              -Общий артериальный ствол
+            </Text>
+            <Text {...css.text} mt={"15px"}>
+              -Коарктации аорты
             </Text>
           </Box>
         </Flex>

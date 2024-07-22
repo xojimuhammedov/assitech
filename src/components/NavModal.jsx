@@ -76,14 +76,6 @@ function NavModal() {
               {...css.link}>
               {t("Contact")}
             </Link>
-            <Link
-              onClick={() => {
-                navigate("/course");
-                onClose();
-              }}
-              {...css.link}>
-              {t("Course")}
-            </Link>
 
             <Link
               onClick={() => {

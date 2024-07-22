@@ -35,9 +35,6 @@ function Navbar() {
             <Link onClick={() => navigate("/")} {...css.link}>
               {t("Contact")}
             </Link>
-            <Link onClick={() => navigate("/course")} {...css.link}>
-              {t("Course")}
-            </Link>
             <Link onClick={() => navigate("/instal")} {...css.link}>
               {t("Установка")}
             </Link>
