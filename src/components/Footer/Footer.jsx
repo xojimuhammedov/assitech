@@ -27,9 +27,13 @@ function Footer() {
               +998 99 815 98 85
             </Link>
             <Text {...css.name}>Mail:</Text>
-            <Link {...css.text} href="#">
-              Assitechbio@gmail.com
-            </Link>
+            <Text display={"flex"} gap={"10px"} {...css.text}>
+              <a href="mailto:Assitechbio@gmail.com">sales@assitech.uz</a>
+              <a href="mailto:Akramov@gmail.com">Ceo@assitech.uz</a>
+              <a href="mailto:farkhodovasevinch2004@gmail.com">
+                Sevinch@assitech.uz
+              </a>
+            </Text>
             <Text {...css.name}>{t("Working schedule:")}</Text>
             <Text {...css.text}>Monday - Friday: 9:00 - 18:00</Text>
             <Text {...css.name}>{t("We are in social networks")}</Text>
