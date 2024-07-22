@@ -21,7 +21,7 @@ function Footer() {
             <Text {...css.text}>
               Tashkent, Olmazor Yunusobod, massiv 11 52B
             </Text>
-            <Text {...css.name}>Phone:</Text>
+            <Text {...css.name}>{t("Phone")}</Text>
 
             <Link {...css.text} href="tel:+998998159885">
               +998 99 815 98 85
