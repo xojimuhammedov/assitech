@@ -13,10 +13,10 @@ function HomePage() {
       <Header />
       <AboutUs />
       <CoursePage />
+      <Statistic />
       <Services />
       <Main />
       <Products />
-      <Statistic />
       <Contact />
     </>
   );
