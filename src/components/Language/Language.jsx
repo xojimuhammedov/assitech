@@ -44,7 +44,7 @@ function Language() {
 
   return (
     <div
-      style={{ display: "flex", alignItems: "center" }}
+      style={{ display: "flex", alignItems: "center", position: "relative" }}
       className="custom-dropdown"
       onClick={toggleMenu}>
       <button className="custom-dropdown-toggle">
@@ -77,7 +77,8 @@ export default Language;
 
 const css = {
   image: {
-    width: "25px",
-    height: "25px",
+    width: "35px",
+    height: "30px",
+    objectFit: "contain",
   },
 };

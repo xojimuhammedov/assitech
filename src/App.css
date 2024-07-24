@@ -120,10 +120,9 @@
 .custom-dropdown-menu {
   position: absolute;
   z-index: 9999;
-  top: 2.5%;
+  top: 30px;
   border-radius: 10px;
   margin-left: -3px;
-  padding: 2px 5px;
   background-color: #fff;
   box-shadow: 0 9px 18px 0 rgba(144, 173, 248, 0.25);
   padding-bottom: 0;
@@ -132,6 +131,7 @@
 .custom-dropdown-item {
   cursor: pointer;
   margin: 8px 0;
+  padding:3px 5px;
 }
 
 .home-fixed {
@@ -175,13 +175,13 @@
   justify-content: center;
 }
 
-.instal-video{
+.instal-video {
   height: 400px !important;
   width: 100%;
   object-fit: cover;
 }
 
-.course-title{
+.course-title {
   display: flex;
   flex-direction: column;
   gap: 10px;
