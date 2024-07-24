@@ -27,7 +27,7 @@ function Footer() {
               +998 99 815 98 85
             </Link>
             <Text {...css.name}>Mail:</Text>
-            <Text display={"flex"} gap={"10px"} {...css.text}>
+            <Text flexWrap={"wrap"} display={"flex"} gap={"10px"} {...css.text}>
               <a href="mailto:Assitechbio@gmail.com">sales@assitech.uz</a>
               <a href="mailto:Akramov@gmail.com">Ceo@assitech.uz</a>
               <a href="mailto:farkhodovasevinch2004@gmail.com">

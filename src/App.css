@@ -181,6 +181,12 @@
   object-fit: cover;
 }
 
+.course-title{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 @keyframes pulse-white {
   0% {
     transform: scale(0.95);
